@@ -7,7 +7,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body onload="setup()">
-    <div id="mainContainer"></div>
+    <div id="mainContainer">
+      <div id="options">
+        <div id="speedSliderContainer">
+          <label><b>Speed</b></label>
+          <input
+            type="range"
+            min="100"
+            max="5000"
+            value="2600"
+            id="speedSlider"
+            class="slider"
+            onchange="updateSpeed(this.value)"
+          />
+        </div>
+      </div>
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>
