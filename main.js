@@ -86,10 +86,6 @@ function setup() {
 }
 
 function setAnimations() {
-  //   const sleep = (milliseconds) => {
-  //     return new Promise((resolve) => setTimeout(resolve, milliseconds));
-  //   };
-  //   const setNewAnimations = async () => {
   for (var i = 0; i < numCubes; i++) {
     var thisCube = document.getElementById("c" + i);
     var animationNum = getRandomInt(4);
@@ -97,8 +93,6 @@ function setAnimations() {
     var animateFrom = "";
     var animateTo = "";
     var animationDuration = 2500;
-    //var animationDuration = 2 * (getRandomInt(2) + 1) * 1000;
-
     if (animationNum == 0) {
       animationType = "rotateX";
       animateFrom = "0deg";
